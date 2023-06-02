@@ -6,12 +6,14 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
+  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -41,6 +43,13 @@ Visual Studia Code, Figma and HTML/CSS linters
 
 - **[Linters implementation]**
 - **[Portfolio homepage]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://drive.google.com/file/d/1ZcKMGwSEZXwAgZT_wq0APO_y50YZDZ8R/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,6 +103,16 @@ npx stylelint "**/*.{css,scss}"
  You can check if your linter configuration is correct using the [check-linters-config](https://github.com/microverseinc/linters-config/blob/master/scripts) script.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+### Deployment
+
+You can deploy this project using:
+
+git push https://github.com/tajemouti/portfolio.git
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 ## 👥 Authors <a name="authors"></a>
