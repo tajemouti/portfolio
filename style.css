@@ -6,43 +6,40 @@
   box-sizing: border-box;
 }
 
+body {
+  min-width: 375px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   color: #fff;
   background-color: #3c3a39;
-  padding: 15px;
+  padding: 3% 5% 3% 5%;
 }
 
 #logo {
   font-family: Roboto, sans-serif;
+  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-}
-
-#menu-button {
-  background: transparent;
-  border: none;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
+  text-decoration: none;
+  color: #fff;
 }
 
 #headline {
-  position: relative;
-  background-color: #1c1a19;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   color: #fff;
-  padding: 10%;
-  padding-bottom: 12rem;
-}
-
-#icon {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  padding: 120px 5% 130px 5%;
+  gap: 12px;
+  background-image: url("./svg/side-pic.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom;
+  background-color: #1c1a19;
 }
 
 #salut {
@@ -72,6 +69,7 @@ main {
 
 #links {
   display: flex;
+  list-style-type: none;
 }
 
 .link {
