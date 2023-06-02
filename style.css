@@ -1,25 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&family=Inter:wght@400;700&display=swap");
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    color: #FFF;
-    background-color: #3C3A39;
-    padding: 15px;
-  }
+header {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background-color: #3c3a39;
+  padding: 15px;
+}
 
-  #logo {
-    font-family: Roboto, sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 24px;
-  }
+#logo {
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
 
-  #menu-button {
-    background: transparent;
-    border: none;
-  }
+#menu-button {
+  background: transparent;
+  border: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#headline {
+  position: relative;
+  background-color: #1c1a19;
+  color: #fff;
+  padding: 10%;
+  padding-bottom: 12rem;
+}
+
+#icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#salut {
+  color: #ff6b00;
+  font-family: "Crete Round", sans-serif;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+}
+
+#job {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
+}
+
+#description {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+#links {
+  display: flex;
+}
+
+.link {
+  padding: 5px;
+  background-color: transparent;
+}
