@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    background-color: #3C3A39;
+    padding: 15px;
+  }
+
+  #logo {
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  #menu-button {
+    background: transparent;
+    border: none;
+  }
