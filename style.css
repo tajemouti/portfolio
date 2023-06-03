@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Poppins&family=Roboto:wght@700&display=swap');
 
 :root {
-  --dark-grey: #3C3A39;
-  --silver: #ACB7C3;
-  --black: #1C1A19;
-  --orange: #FF6B00;
-  --whity: #FFF5E1;
-  --blue-like: #091E42;
-  --grey: #8993A4;
+  --dark-grey: #3c3a39;
+  --silver: #acb7c3;
+  --black: #1c1a19;
+  --orange: #ff6b00;
+  --whity: #fff5e1;
+  --blue-like: #091e42;
+  --grey: #8993a4;
   --grey-like: rgba(255, 255, 255, 0.24);
-  --white-like: #F4F5F7;
+  --white-like: #f4f5f7;
 }
 
 *,
@@ -20,18 +20,17 @@
   text-decoration: none;
 }
 
-body { 
-  margin: 0;
-  font-family: Inter, sans-serif;
+body {
+  width: 100%;
+  font-family: "Inter", sans-serif;
 }
 
 .tool-bar {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: var(--dark-grey);
   position: absolute;
-  left: 0px;
-  right: 0px;
   padding: 12px 24px 12px 24px;
 }
 
@@ -87,7 +86,6 @@ body {
 .social {
   display: flex;
   list-style-type: none;
-  margin: 0px;
 }
 
 .link:hover {
@@ -120,7 +118,6 @@ body {
 .line {
   border: 1px solid #212121;
   width: 327px;
-  height: 0px;
   margin-bottom: 80px;
 }
 
@@ -128,7 +125,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
   gap: 24px;
 }
 
@@ -147,7 +143,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
   gap: 12px;
 }
 
@@ -173,9 +168,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
   gap: 12px;
-  
 }
 
 .lang-list {
@@ -187,15 +180,13 @@ body {
   line-height: 20px;
   color: var(--blue-like);
   padding: 10px 12px;
-  border: 1px solid #8993A4;
+  border: 1px solid #8993a4;
 }
 
 .button {
-  left: 0px;
-  bottom: 0px;
   width: 124px;
   height: 48px;
-  background-color: #FF6B00;
+  background-color: #ff6b00;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -207,15 +198,11 @@ body {
   background-color: white;
 }
 
-.button:onclick {
-  background-color: #E05304;
-} 
-
 .projects {
-  display: grid;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 15px;
+  padding: 20px 0;
 }
 
 .placeholder1 {
@@ -238,16 +225,15 @@ body {
 }
 
 .description1 {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
 
-.large{
+.large {
   width: 100%;
-  bottom: 0px;
 }
 
 .white {
@@ -285,10 +271,6 @@ body {
   align-items: flex-start;
   padding: 120px 24px;
   gap: 24px;
-}
-
-.grey {
-  color: var(--grey);
 }
 
 .languages {
