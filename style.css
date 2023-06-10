@@ -176,9 +176,6 @@ body {
 .img-placeholder {
   min-width: 327px;
   min-height: 237px;
-  background-image: url("default/PNG/img-placeholder.png");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .right.block1 {
