@@ -11,7 +11,7 @@
   --grey-like: rgba(255, 255, 255, 0.24);
   --white-like: #f4f5f7;
   --orange-like: #a04300;
-  --white: #ffffff;
+  --white: #fff;
 }
 
 *,
@@ -76,7 +76,6 @@ body {
   line-height: 64px;
   letter-spacing: 0.37px;
   color: var(--orange);
-  
 }
 
 .iam {
@@ -102,9 +101,7 @@ body {
 .social {
   display: flex;
   align-items: center;
-  padding: 0px;
   width: 200px;
-  
 }
 
 .link {
@@ -123,13 +120,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px 0px;
+  padding: 120px;
   gap: 80px;
   min-width: 375px;
   width: 100%;
 }
 
-.work-section-heading{
+.work-section-heading {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -160,7 +157,7 @@ body {
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows:  568px 1fr;
+  grid-template-rows: 568px 1fr;
   align-items: center;
   gap: 24px;
   min-width: 375px;
@@ -173,10 +170,9 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 0px 6.4%;
+  padding: 6.4%;
   gap: 24px;
   min-width: 375px;
-
 }
 
 .img-placeholder {
@@ -191,7 +187,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
   min-width: 327px;
   min-height: 307px;
   width: 100%;
@@ -211,7 +206,7 @@ body {
   margin-bottom: 12px;
 }
 
-.right-block1-description{
+.right-block1-description {
   width: 327px;
   height: 147px;
   font-family: 'Inter', sans-serif;
@@ -226,7 +221,6 @@ body {
 .lang1 {
   display: flex;
   align-items: center;
-  padding: 0px;
   gap: 12px;
   width: 314px;
   height: 40px;
@@ -279,7 +273,7 @@ button:disabled {
   align-items: center;
   align-content: space-around;
   justify-content: space-around;
-  padding: 0px 6.4%;
+  padding: 6.4%;
   gap: 24px;
   width: 100%;
   min-width: 375px;
@@ -304,7 +298,7 @@ button:disabled {
   position: absolute;
   width: 333px;
   height: 260px;
-  left: calc(50% - 333px/2);
+  left: calc(50% - 333px / 2);
   bottom: 62px;
 }
 
@@ -331,7 +325,6 @@ button:disabled {
 .lang2 {
   display: flex;
   align-items: center;
-  padding: 0px;
   gap: 12px;
   width: 247px;
   height: 40px;
@@ -402,8 +395,7 @@ button:disabled {
   width: 100%;
   min-width: 327px;
   border: none;
-  height: 0px;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #fff;
   margin-top: 185px;
   margin-bottom: 8px;
 }
@@ -423,7 +415,6 @@ button:disabled {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
   gap: 24px;
 }
 
@@ -435,7 +426,7 @@ button:disabled {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 44px;
 }
 
@@ -443,19 +434,21 @@ button:disabled {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 12px;
+  padding-left: 12px;
+  padding-right: 12px;
   gap: 8px;
 }
 
 .skill-list {
   display: flex;
   align-items: center;
-  padding: 12px 0px;
+  padding-left: 12px;
+  padding-right: 12px;
   height: 48px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 43px;
   text-align: center;
 }
