@@ -14,9 +14,7 @@
   --white: #fff;
 }
 
-*,
-*::after,
-*::before {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -30,7 +28,7 @@ body {
   min-width: 375px;
 }
 
-.tool-bar {
+#nav-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -148,7 +146,6 @@ body {
 }
 
 .divider {
-  width: 100%;
   min-width: 327px;
   border: none;
   border-bottom: 1px solid #212121;
