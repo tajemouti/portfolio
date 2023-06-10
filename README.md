@@ -24,7 +24,7 @@
 
 # 📖 [Portfolio] <a name="about-project"></a>
 
-**[Portfolio]** is a learning project in which it is required to implement HTML/CSS linters.. And to build a professional portfolio webpage..
+**[Portfolio]** is a learning project in which it is required to implement HTML/CSS linters.. And to build a professional portfolio webpage based on Figma template..
 
 ## 🛠 Built With <a name="built-with"></a>
 Visual Studia Code, Figma and HTML/CSS linters 
