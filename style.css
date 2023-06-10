@@ -169,6 +169,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  align-content: center;
   justify-content: center;
   padding: 6.4%;
   gap: 24px;
@@ -452,4 +453,3 @@ button:disabled {
   line-height: 43px;
   text-align: center;
 }
-
