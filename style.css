@@ -146,6 +146,12 @@ body {
 }
 
 .divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  height: 107px;
   min-width: 327px;
   border: none;
   border-bottom: 1px solid #212121;
