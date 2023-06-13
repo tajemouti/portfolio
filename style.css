@@ -228,6 +228,7 @@ body {
   color: var(--blue-like);
   display: flex;
   align-items: center;
+  float: left;
   padding: 10px 12px;
   border: 1px solid #8993a4;
 }
