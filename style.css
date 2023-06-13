@@ -321,9 +321,6 @@ button:disabled {
 }
 
 .lang2 {
-  display: flex;
-  align-items: center;
-  gap: 12px;
   width: 247px;
   height: 40px;
 }
@@ -332,6 +329,7 @@ button:disabled {
   display: flex;
   align-items: center;
   padding: 10px 12px;
+  float: left;
   background: var(--grey-like);
   font-family: 'Inter', sans-serif;
   font-style: normal;
