@@ -204,14 +204,19 @@
         </section>
       </section>
       <section id="form-section">
-        <div class="form-heading">
-          <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-          <form action="">
-            <input type="text" id="name" name="name" placeholder="Full name" maxlength="30" required>
-            <input type="email" name="email" id="email" placeholder="Email address" required>
-            <textarea name="text" id="textarea" cols="30" rows="10" placeholder="Write me something..." required></textarea>
-          </form>
-        </div>
+        <h2 class="form-heading">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+        <form action="https://formspree.io/f/mdovqere" method="post">
+          <label for="name">
+            <input id="name" name="name" type="text" maxlength="30" placeholder="Full name"required>
+          </label>
+          <label for="email">
+            <input id="email" name="email" type="email" placeholder="Email address" required>
+          </label>
+          <label for="message">
+            <textarea name="message" maxlength="500" required>Write me something...</textarea>
+          </label>
+          <button type="submit">Get in touch</button>
+        </form>
       </section>
     </main>
     <footer>
