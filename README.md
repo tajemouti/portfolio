@@ -49,7 +49,7 @@ Visual Studia Code, Figma and HTML/CSS linters
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://drive.google.com/file/d/1o3ZKHlKJJrwBae8e79UNTR-9oRtBFDGX/view?usp=sharing)
+- [Live Demo Link](https://drive.google.com/file/d/1lA-8wMz8xamxYuf6UZojbIrs5CUeJEtc/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,7 +152,7 @@ This was my first Portfolio project ever.. So please.. Show some appreciation.. 
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my learning partners.. Allen.. I really appreciate your help..
+I would like to thank my coding partner [Binyam Olango](https://github.com/binyamolango) .. I really appreciate your contribution..
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -12,6 +12,9 @@
   --white-like: #f4f5f7;
   --orange-like: #a04300;
   --white: #fff;
+  --blue: #172b4d;
+  --gray: #979493;
+  --gray-like: #505f79;
 }
 
 * {
@@ -23,8 +26,7 @@
   list-style-type: none;
 }
 
-body {
-  width: 100%;
+html {
   min-width: 375px;
 }
 
@@ -118,7 +120,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 120px;
+  padding: 120px 24px;
   gap: 80px;
   min-width: 375px;
   width: 100%;
@@ -285,10 +287,6 @@ button:disabled {
   height: 390px;
 }
 
-.card-img {
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
-}
-
 .right-block2 {
   display: flex;
   flex-direction: column;
@@ -354,7 +352,7 @@ button:disabled {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 120px 6.4% 37.54px 6.4%;
+  padding: 120px 6.4% 0.5px 6.4%;
   gap: 24px;
   min-width: 375px;
   width: 100%;
@@ -451,4 +449,90 @@ button:disabled {
   font-size: 20px;
   line-height: 43px;
   text-align: center;
+}
+
+#form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 6.4%;
+  width: 100%;
+  gap: 58px;
+}
+
+.form-heading {
+  text-align: center;
+  max-width: 600px;
+  min-width: 327px;
+  max-height: 262px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: var(--blue);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  min-width: 327px;
+  max-width: 600px;
+  height: 330px;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  max-width: 600px;
+  min-width: 327px;
+  height: 48px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+  color: var(--gray);
+  border: none;
+  border-bottom: 1px solid #dbd8d7;
+}
+
+textarea {
+  width: 100%;
+  min-width: 327px;
+  min-height: 114px;
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  padding-left: 16px;
+  color: var(--dark-grey);
+  background: #fbf8f7;
+  border: none;
+}
+
+footer {
+  width: 100%;
+  min-width: 375px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  border-top: 1px solid #dfe1e6;
+  padding-top: 15px;
+  padding-bottom: 11px;
+}
+
+#bottom-line {
+  min-width: 134px;
+  height: 5px;
+  background: #0d151e;
+  border-radius: 10px;
 }
