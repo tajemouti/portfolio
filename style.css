@@ -549,3 +549,19 @@ footer {
   background: #0d151e;
   border-radius: 10px;
 }
+
+@media (min-width: 768px) {
+  #nav-bar {
+    height: 10vh;
+  }
+  
+  .headline {
+    min-height: 90vh;
+  }
+  
+  .background {
+    background-image: url("default/SVG/Illustration-header.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+}
