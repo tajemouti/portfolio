@@ -250,6 +250,7 @@ button {
   letter-spacing: 0.03em;
   border: none;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 button:active {
