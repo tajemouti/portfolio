@@ -183,6 +183,7 @@ html {
 .img-placeholder {
   min-width: 327px;
   min-height: 237px;
+  transition: all 0.5s ease-in;
 }
 
 .right.block1 {
