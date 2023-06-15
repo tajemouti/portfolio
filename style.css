@@ -252,7 +252,7 @@ button {
   cursor: pointer;
 }
 
-button:focus {
+button:active {
   color: #f4f1f0;
   background: #e05304;
 }
@@ -490,11 +490,6 @@ input {
   max-width: 600px;
   min-width: 327px;
   height: 48px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
   padding-left: 16px;
   display: flex;
   align-items: center;
@@ -503,19 +498,37 @@ input {
   border-bottom: 1px solid #dbd8d7;
 }
 
+input::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--gray);
+}
+
 textarea {
   width: 100%;
   min-width: 327px;
   min-height: 114px;
+  padding: 12px;
+  background: #fbf8f7;
+  border: none;
+  color: var(--dark-grey);
+}
+
+textarea::placeholder {
   font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  padding-left: 16px;
   color: var(--dark-grey);
-  background: #fbf8f7;
-  border: none;
+}
+
+.btn:active {
+  background: #e05304;
+  color: #f4f1f0;
 }
 
 footer {
