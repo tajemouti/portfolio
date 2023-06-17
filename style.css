@@ -186,7 +186,6 @@ header {
   align-items: center;
   justify-content: center;
   gap: 24px;
-  min-width: 100%;
 }
 
 .img-placeholder {
@@ -365,7 +364,8 @@ button:disabled {
 }
 
 .about-me-heading {
-  width: 327px;
+  min-width: 327px;
+  max-width: 566px;
   height: 79px;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -378,13 +378,14 @@ button:disabled {
 
 .about-me-description {
   min-width: 327px;
-  max-width: 700px;
+  max-width: 566px;
   min-height: 148px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  color: #f4f5f7;
 }
 
 .larger {
@@ -405,7 +406,7 @@ button:disabled {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  padding: 120px 24px 38px 24px;
+  padding: 120px 0px 38px 0px;
   gap: 24px;
   min-width: 329px;
   background: var(--black);
@@ -576,6 +577,7 @@ footer {
   .hello {
     font-size: 72px;
     line-height: 82px;
+    letter-spacing: 0px;
   }
   
   .iam {
@@ -611,7 +613,6 @@ footer {
   
   .stories-item {
     flex-direction: row;
-    height: 448px;
     align-items: flex-start;
   }
 
@@ -620,11 +621,30 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
+
+  .about-me-heading {
+    height: 78px;
+    line-height: 82px;
+    letter-spacing: 0px;
+  }
+
+  .about-me-description {
+    height: 148px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .skill-heading {
+    justify-content: flex-start;
+  }
+
+  .skill {
+    align-items: self-start;
+  }
+
 }
 
-@media (min-width: 992px) {
-  
-  
+@media (min-width: 1280px) {
   #hero-section {
     padding-left: 143px;
     padding-top: 0px;
@@ -634,12 +654,10 @@ footer {
   .headline {
     padding-top: 192px;
     padding-bottom: 192px;
-    
   }
   
   .background {
     background-image: url("default/SVG/Illustration-header.svg");
-    background-repeat: no-repeat;
     background-position: right -63px;
   }
 
@@ -651,5 +669,21 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+
+  #about-me-section {
+    padding: 120px 142px 38px 142px;
+    background-image: url("default/SVG/Frame2.svg");
+    background-position: right 100px;
+  }
+
+  .stories-item {
+    width: 1029px;
+    height: 448px;
+  }
+
+  .img-placeholder {
+    width: 684px;
+    height: 100%;
   }
 }
