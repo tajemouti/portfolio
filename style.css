@@ -26,17 +26,39 @@
   list-style-type: none;
 }
 
-html {
+body {
   min-width: 375px;
 }
 
-#nav-bar {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 6.4%;
   background-color: var(--dark-grey);
-  min-width: 375px;
+}
+
+#nav-bar {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  height: 40px;
+}
+
+.nav-link {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .logo {
@@ -47,19 +69,20 @@ html {
   line-height: 24px;
 }
 
-.menu-icon {
-  width: 24px;
-  height: 24px;
+#hero-section {
+  background-color: var(--black);
+  padding: 120px 6.4%;
+  min-height: 590px;
+  display: flex;
+  flex-direction: column;
 }
 
 .headline {
-  min-width: 375px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 120px 6.4%;
+  justify-content: center;
   gap: 12px;
-  background-color: var(--black);
+  min-width: 327px;
 }
 
 .background {
@@ -95,13 +118,12 @@ html {
   line-height: 24px;
   height: 123px;
   min-width: 327px;
-  max-width: 700px;
+  max-width: 566px;
 }
 
 .social {
   display: flex;
   align-items: center;
-  width: 200px;
 }
 
 .link {
@@ -116,13 +138,12 @@ html {
   background: var(--orange-like);
 }
 
-.work-section {
+#work-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 120px 24px;
   gap: 80px;
-  min-width: 375px;
   width: 100%;
 }
 
@@ -164,7 +185,6 @@ html {
   grid-template-rows: 568px 1fr;
   align-items: center;
   gap: 24px;
-  min-width: 375px;
   width: 100%;
 }
 
@@ -177,7 +197,6 @@ html {
   justify-content: center;
   padding: 6.4%;
   gap: 24px;
-  min-width: 375px;
 }
 
 .img-placeholder {
@@ -278,7 +297,6 @@ button:disabled {
   padding: 6.4%;
   gap: 24px;
   width: 100%;
-  min-width: 375px;
 }
 
 .card {
@@ -348,13 +366,12 @@ button:disabled {
   height: 48px;
 }
 
-.about-me {
+#about-me-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 120px 6.4% 0.5px 6.4%;
+  padding: 120px 6.4% 38px 6.4%;
   gap: 24px;
-  min-width: 375px;
   width: 100%;
   background: var(--black);
   background-image: url("default/SVG/Frame.svg");
@@ -400,25 +417,20 @@ button:disabled {
 
 .skills {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 60px 6.4%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 120px 24px 38px 24px;
   gap: 24px;
   min-width: 329px;
   background: var(--black);
   width: 100%;
 }
 
-.language {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-}
-
 .skill-heading {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 8px 12px;
   gap: 12px;
   font-family: 'Inter', sans-serif;
@@ -533,7 +545,6 @@ textarea::placeholder {
 
 footer {
   width: 100%;
-  min-width: 375px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -551,17 +562,86 @@ footer {
 }
 
 @media (min-width: 768px) {
+  header {
+    padding: 26px 10%;
+  }
+
   #nav-bar {
-    height: 10vh;
+    display: block;
+  }
+
+  .logo {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  #hero-section {
+    padding-left: 143px;
+  }
+
+  .headline {
+    max-width: 566px;
+  }
+  
+  .hello {
+    font-size: 72px;
+    line-height: 82px;
+  }
+  
+  .iam {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+  }
+  
+  .description {
+    max-width: 566px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 36px;
+  }
+
+  
+}
+
+@media (min-width: 992px) {
+  
+  
+  #hero-section {
+    padding-left: 143px;
+    padding-top: 0px;
+    padding-bottom: 52px;
   }
   
   .headline {
-    min-height: 90vh;
+    padding-top: 192px;
+    padding-bottom: 192px;
+    
   }
   
   .background {
     background-image: url("default/SVG/Illustration-header.svg");
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: right -63px;
   }
+
+  .skills {
+    justify-content: space-between;
+  }
+
+
 }
