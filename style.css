@@ -213,7 +213,6 @@ header {
   align-items: center;
   color: var(--blue-like);
   margin-bottom: 12px;
-
 }
 
 .right-block1-description {
@@ -408,7 +407,8 @@ button:disabled {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  padding: 120px 0px 38px 0px;
+  padding-top: 120px;
+  padding-bottom: 38px;
   gap: 34px;
   background: var(--black);
   width: 100%;
@@ -477,7 +477,6 @@ form {
   gap: 24px;
   width: 100%;
   height: 330px;
-  width: 100%;
 }
 
 input {
@@ -552,7 +551,7 @@ footer {
   #nav-bar {
     display: block;
   }
-  
+
   .logo {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
@@ -578,11 +577,12 @@ footer {
   #work-section {
     padding: 130px 24px;
   }
+
   .work-section-heading {
     flex-direction: row;
     align-items: center;
   }
-  
+
   .stories-item {
     flex-direction: row;
     align-items: flex-start;
@@ -625,17 +625,10 @@ footer {
     text-align: left;
     align-items: center;
     max-width: 3;
-
-
   }
 
   form {
     align-items: flex-start;
-  }
-
-  .about-me-description {
-    width: 455px;
-    height: 256px;
   }
 
   label {
@@ -643,56 +636,46 @@ footer {
   }
 }
 
-
-
-
-
-
-
-
-
-
 @media (min-width: 1280px) {
   header {
     padding: 26px 10%;
   }
-  
+
   #hero-section {
     padding-left: 143px;
-    padding-top: 0px;
+    padding-top: 0.1px;
     padding-bottom: 52px;
   }
-  
+
   .headline {
     padding-top: 192px;
     padding-bottom: 192px;
   }
-  
+
   .hello {
     font-size: 72px;
     line-height: 82px;
-    letter-spacing: 0px;
   }
-  
+
   .iam {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 32px;
     line-height: 44px;
   }
-  
+
   .description {
     max-width: 566px;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     line-height: 32px;
   }
-  
+
   .background {
     background-image: url("default/SVG/Illustration-header.svg");
     background-position: right -63px;
   }
-  
+
   .divider {
     width: 690px;
   }
@@ -703,35 +686,34 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
   }
-  
+
   .cards-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  
+
   .stories-item {
     width: 1029px;
     height: 448px;
   }
-  
+
   .img-placeholder {
     width: 684px;
     height: 100%;
   }
-  
+
   #about-me-section {
     padding: 120px 142px 38px 142px;
     background-image: url("default/SVG/Frame2.svg");
     background-position: right 100px;
   }
-  
+
   .about-me-heading {
     height: 78px;
     line-height: 82px;
-    letter-spacing: 0px;
   }
-  
+
   .about-me-description {
     height: 148px;
     font-size: 20px;
