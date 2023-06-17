@@ -556,11 +556,11 @@ footer {
   #nav-bar {
     height: 10vh;
   }
-  
+
   .headline {
     min-height: 90vh;
   }
-  
+
   .background {
     background-image: url("default/SVG/Illustration-header.svg");
     background-repeat: no-repeat;
