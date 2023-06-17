@@ -26,17 +26,40 @@
   list-style-type: none;
 }
 
-html {
+body {
   min-width: 375px;
 }
 
-#nav-bar {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 6.4%;
   background-color: var(--dark-grey);
-  min-width: 375px;
+  width: 100%;
+}
+
+#nav-bar {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  height: 40px;
+}
+
+.nav-link {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .logo {
@@ -47,19 +70,21 @@ html {
   line-height: 24px;
 }
 
-.menu-icon {
-  width: 24px;
-  height: 24px;
+#hero-section {
+  background-color: var(--black);
+  padding: 120px 6.4%;
+  min-height: 590px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .headline {
-  min-width: 375px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 120px 6.4%;
+  justify-content: center;
   gap: 12px;
-  background-color: var(--black);
+  width: 100%;
 }
 
 .background {
@@ -95,13 +120,12 @@ html {
   line-height: 24px;
   height: 123px;
   min-width: 327px;
-  max-width: 700px;
+  max-width: 566px;
 }
 
 .social {
   display: flex;
   align-items: center;
-  width: 200px;
 }
 
 .link {
@@ -116,27 +140,23 @@ html {
   background: var(--orange-like);
 }
 
-.work-section {
+#work-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 120px 24px;
   gap: 80px;
-  min-width: 375px;
   width: 100%;
 }
 
 .work-section-heading {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 24px;
-  min-width: 327px;
-  height: 107px;
 }
 
 .work-section-title {
-  width: 327px;
-  height: 83px;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -148,47 +168,34 @@ html {
 }
 
 .divider {
+  height: 1px;
+  min-width: 327px;
+  border-bottom: 1px solid #212121;
+}
+
+.projects {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  height: 107px;
-  min-width: 327px;
-  border: none;
-  border-bottom: 1px solid #212121;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 568px 1fr;
-  align-items: center;
-  gap: 24px;
-  min-width: 375px;
-  width: 100%;
 }
 
 .stories-item {
-  grid-area: 1/1/span 1/span 1;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  align-content: center;
   justify-content: center;
-  padding: 6.4%;
   gap: 24px;
-  min-width: 375px;
 }
 
 .img-placeholder {
-  min-width: 327px;
-  min-height: 237px;
+  height: 80%;
 }
 
 .right.block1 {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   min-width: 327px;
   min-height: 307px;
   width: 100%;
@@ -268,17 +275,13 @@ button:disabled {
   background: #f4f1f0;
 }
 
-.cards-item {
-  grid-area: 2/1/span 1/span 1;
-  display: flex;
-  flex-wrap: wrap;
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   align-items: center;
-  align-content: space-around;
-  justify-content: space-around;
-  padding: 6.4%;
+  justify-content: center;
   gap: 24px;
-  width: 100%;
-  min-width: 375px;
 }
 
 .card {
@@ -348,13 +351,12 @@ button:disabled {
   height: 48px;
 }
 
-.about-me {
+#about-me-section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 120px 6.4% 0.5px 6.4%;
+  padding: 120px 6.4% 38px 6.4%;
   gap: 24px;
-  min-width: 375px;
   width: 100%;
   background: var(--black);
   background-image: url("default/SVG/Frame.svg");
@@ -363,7 +365,8 @@ button:disabled {
 }
 
 .about-me-heading {
-  width: 327px;
+  min-width: 327px;
+  max-width: 566px;
   height: 79px;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -376,13 +379,14 @@ button:disabled {
 
 .about-me-description {
   min-width: 327px;
-  max-width: 700px;
+  max-width: 566px;
   min-height: 148px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  color: #f4f5f7;
 }
 
 .larger {
@@ -401,24 +405,19 @@ button:disabled {
 .skills {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 60px 6.4%;
-  gap: 24px;
-  min-width: 329px;
+  justify-content: center;
+  align-content: center;
+  padding-top: 120px;
+  padding-bottom: 38px;
+  gap: 34px;
   background: var(--black);
   width: 100%;
-}
-
-.language {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
 }
 
 .skill-heading {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 8px 12px;
   gap: 12px;
   font-family: 'Inter', sans-serif;
@@ -454,24 +453,21 @@ button:disabled {
 #form-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding: 70px 6.4%;
+  padding: 130px 6.4%;
   width: 100%;
   gap: 58px;
 }
 
 .form-heading {
   text-align: center;
-  max-width: 600px;
-  min-width: 327px;
-  max-height: 262px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   color: var(--blue);
+  max-width: 455px;
 }
 
 form {
@@ -479,15 +475,12 @@ form {
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  min-width: 327px;
-  max-width: 600px;
-  height: 330px;
   width: 100%;
+  height: 330px;
 }
 
 input {
   width: 100%;
-  max-width: 600px;
   min-width: 327px;
   height: 48px;
   padding-left: 16px;
@@ -533,7 +526,6 @@ textarea::placeholder {
 
 footer {
   width: 100%;
-  min-width: 375px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -543,9 +535,188 @@ footer {
   padding-bottom: 11px;
 }
 
+.social-footer {
+  display: flex;
+  align-items: center;
+}
+
 #bottom-line {
   min-width: 134px;
   height: 5px;
   background: #0d151e;
   border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  #nav-bar {
+    display: block;
+  }
+
+  .logo {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  #hero-section {
+    padding-left: 143px;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 36px;
+  }
+
+  #work-section {
+    padding: 130px 24px;
+  }
+
+  .work-section-heading {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .stories-item {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .skill-heading {
+    justify-content: flex-start;
+  }
+
+  .skill {
+    align-items: self-start;
+  }
+
+  #bottom-line {
+    display: none;
+  }
+
+  #form-section {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    gap: 24px;
+  }
+
+  .form-heading {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+    max-width: 3;
+  }
+
+  form {
+    align-items: flex-start;
+  }
+
+  label {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  header {
+    padding: 26px 10%;
+  }
+
+  #hero-section {
+    padding-left: 143px;
+    padding-top: 0.1px;
+    padding-bottom: 52px;
+  }
+
+  .headline {
+    padding-top: 192px;
+    padding-bottom: 192px;
+  }
+
+  .hello {
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  .iam {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .description {
+    max-width: 566px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .background {
+    background-image: url("default/SVG/Illustration-header.svg");
+    background-position: right -63px;
+  }
+
+  .divider {
+    width: 690px;
+  }
+
+  .skills {
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .stories-item {
+    width: 1029px;
+    height: 448px;
+  }
+
+  .img-placeholder {
+    width: 684px;
+    height: 100%;
+  }
+
+  #about-me-section {
+    padding: 120px 142px 38px 142px;
+    background-image: url("default/SVG/Frame2.svg");
+    background-position: right 100px;
+  }
+
+  .about-me-heading {
+    height: 78px;
+    line-height: 82px;
+  }
+
+  .about-me-description {
+    height: 148px;
+    font-size: 20px;
+    line-height: 32px;
+  }
 }
