@@ -150,14 +150,12 @@ header {
 .work-section-heading {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 24px;
   min-width: 327px;
-  height: 107px;
 }
 
 .work-section-title {
-  width: 327px;
-  height: 83px;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -169,45 +167,35 @@ header {
 }
 
 .divider {
+  height: 1px;
+  min-width: 327px;
+  border-bottom: 1px solid #212121;
+}
+
+.projects {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  height: 107px;
-  min-width: 327px;
-  border: none;
-  border-bottom: 1px solid #212121;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 568px 1fr;
-  align-items: center;
-  gap: 24px;
-  width: 100%;
 }
 
 .stories-item {
-  grid-area: 1/1/span 1/span 1;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  align-content: center;
   justify-content: center;
-  padding: 6.4%;
   gap: 24px;
+  min-width: 100%;
 }
 
 .img-placeholder {
-  min-width: 327px;
-  min-height: 237px;
+  height: 80%;
 }
 
 .right.block1 {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   min-width: 327px;
   min-height: 307px;
   width: 100%;
@@ -287,16 +275,13 @@ button:disabled {
   background: #f4f1f0;
 }
 
-.cards-item {
-  grid-area: 2/1/span 1/span 1;
-  display: flex;
-  flex-wrap: wrap;
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   align-items: center;
-  align-content: space-around;
-  justify-content: space-around;
-  padding: 6.4%;
+  justify-content: center;
   gap: 24px;
-  width: 100%;
 }
 
 .card {
@@ -615,7 +600,26 @@ footer {
     left: 36px;
   }
 
+  #work-section {
+    padding: 130px 24px;
+  }
   
+  .work-section-heading {
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .stories-item {
+    flex-direction: row;
+    height: 448px;
+    align-items: flex-start;
+  }
+
+  .cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 
 @media (min-width: 992px) {
@@ -643,5 +647,9 @@ footer {
     justify-content: space-between;
   }
 
-
+  .cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
