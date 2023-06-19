@@ -60,6 +60,11 @@ header {
   display: flex;
   align-items: center;
   text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  transform: scale(1.2);
 }
 
 .logo {
@@ -68,6 +73,11 @@ header {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.5);
 }
 
 #hero-section {
@@ -134,10 +144,12 @@ header {
   height: 40px;
   display: flex;
   border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .link:hover {
   background: var(--orange-like);
+  transform: scale(1.5);
 }
 
 #work-section {
@@ -187,6 +199,11 @@ header {
   align-items: center;
   justify-content: center;
   gap: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.stories-item:hover {
+  transform: scale(1.08);
 }
 
 .img-placeholder {
@@ -257,6 +274,7 @@ button {
   letter-spacing: 0.03em;
   border: none;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 button:active {
@@ -288,6 +306,11 @@ button:disabled {
   position: relative;
   width: 327px;
   height: 390px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.08);
 }
 
 .right-block2 {
