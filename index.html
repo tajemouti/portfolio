@@ -9,51 +9,68 @@
   </head>
   <body>
     <header>
+      <a class="logo" href="#">Ajrass</a>
+      <a class="menu-icon" href="#"><img src="default/SVG/IconMenu.svg" alt="Menu Icon"></a>
       <nav id="nav-bar">
-        <a class="logo" href="#">Ajrass</a>
-        <a class="menu-icon" href="#"><img src="default/SVG/IconMenu.svg" alt="Menu Icon"></a>
+        <ul class="nav-links">
+          <li class="nav-link">
+            <a href="#work-section">Portfolio</a>
+          </li>
+          <li class="nav-link">
+            <a href="#about-me-section">About</a>
+          </li>
+          <li class="nav-link">
+            <a href="#form-section">Contact</a>
+          </li>
+          <li>
+            <a href="#"><img src="default/SVG/mail.svg" alt="mail"></a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
-      <section class="headline background">
-        <h1 class="hello">Hey There.<br>I'm Ajrass.</h1>
-        <h2 class="iam">I'm a Software Developer</h2>
-        <p class="description">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-          don’t hesitate to contact me.
-        </p>
-        <ul class="social">
-          <li>
-            <a class="link" href="https://github.com/tajemouti" rel="noopener noreferrer" target="_blank">
-              <img src="default/SVG/IconGitHub.svg" alt="GitHub">
-            </a>
-          </li>
-          <li>
-            <a class="link" href="https://www.linkedin.com/in/ajrass" rel="noopener noreferrer" target="_blank">
-              <img src="default/SVG/Icon Linkedin.svg" alt="LinkedIn">
-            </a>
-          </li>
-          <li>
-            <a class="link" href="https://wellfound.com/u/ajrass-tajemouti" rel="noopener noreferrer" target="_blank">
-              <img src="default/SVG/IconAngelist.svg" alt="WellFound">
-            </a>
-          </li>
-          <li>
-            <a class="link" href="https://twitter.com/AjrassTajemouti" rel="noopener noreferrer" target="_blank">
-              <img src="default/SVG/IconTwitter.svg" alt="Twitter">
-            </a>
-          </li>
-          <li>
-            <a class="link" href="https://medium.com/@tajemouti/" rel="noopener noreferrer" target="_blank">
-              <img src="default/SVG/IconMedium.svg" alt="Medium">
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="work-section">
-        <div class="divider">
-          <h2 class="work-section-title">My Recent Works</h2>
+      <section id="hero-section" class="background">
+        <div  class="headline">
+          <h1 class="hello">Hey There.<br>I'm Ajrass.</h1>
+          <h2 class="iam">I'm a Software Developer</h2>
+          <p class="description">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+            don’t hesitate to contact me.
+          </p>
+          <ul class="social">
+            <li>
+              <a class="link" href="https://github.com/tajemouti" rel="noopener noreferrer" target="_blank">
+                <img src="default/SVG/IconGitHub.svg" alt="GitHub">
+              </a>
+            </li>
+            <li>
+              <a class="link" href="https://www.linkedin.com/in/ajrass" rel="noopener noreferrer" target="_blank">
+                <img src="default/SVG/Icon Linkedin.svg" alt="LinkedIn">
+              </a>
+            </li>
+            <li>
+              <a class="link" href="https://wellfound.com/u/ajrass-tajemouti" rel="noopener noreferrer" target="_blank">
+                <img src="default/SVG/IconAngelist.svg" alt="WellFound">
+              </a>
+            </li>
+            <li>
+              <a class="link" href="https://twitter.com/AjrassTajemouti" rel="noopener noreferrer" target="_blank">
+                <img src="default/SVG/IconTwitter.svg" alt="Twitter">
+              </a>
+            </li>
+            <li>
+              <a class="link" href="https://medium.com/@tajemouti/" rel="noopener noreferrer" target="_blank">
+                <img src="default/SVG/IconMedium.svg" alt="Medium">
+              </a>
+            </li>
+          </ul>
         </div>
-        <article class="projects-grid">
+      </section>
+      <section id="work-section">
+        <div class="work-section-heading">
+          <h2 class="work-section-title">My Recent Works</h2>
+          <hr class="divider">
+        </div>
+        <article class="projects">
           <section class="stories-item">
             <img class="img-placeholder" src="default/PNG/img-placeholder.png" alt="image">
             <div class="right-block1">
@@ -68,7 +85,7 @@
               <button type="button">See project</button>
             </div>
           </section>
-          <section class="cards-item">
+          <section class="cards-grid">
             <aside class="card">
               <div class="card-img">
                 <img src="default/PNG/img-placeholder1.png" alt="placeholder">
@@ -162,13 +179,13 @@
           </section>
         </article>
       </section>
-      <section class="about-me">
+      <section id="about-me-section">
         <h2 class="about-me-heading">About me</h2>
         <p class="about-me-description">Hello I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
         <button class="larger" type="button">Get my resume</button>
         <hr class="line">
         <section class="skills">
-          <div class="language">
+          <div>
             <span class="skill-heading">
               <img src="default/SVG/Rectangle55.svg" alt="shape">
               <h3>Language</h3>
@@ -179,6 +196,8 @@
               <li class="skill-list">HTML</li>
               <li class="skill-list">CSS</li>
             </ul>
+          </div>
+          <div>
             <span class="skill-heading">
               <img src="default/SVG/Rectangle56.svg" alt="shape">
               <h3>Frameworks</h3>
@@ -189,6 +208,8 @@
               <li class="skill-list">RSpec</li>
               <li class="skill-list">Capybara</li>
             </ul>
+          </div>
+          <div>
             <span class="skill-heading">
               <img src="default/SVG/Rectangle57.svg" alt="shape">
               <h3>Skills</h3>
@@ -220,7 +241,7 @@
       </section>
     </main>
     <footer>
-      <ul class="social">
+      <ul class="social-footer">
         <li>
           <a class="link" href="https://github.com/tajemouti" rel="noopener noreferrer" target="_blank">
             <img class="color" src="default/SVG/Disabled1.svg" alt="GitHub">
