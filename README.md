@@ -62,6 +62,7 @@ In order to use this project.. Clone this repository to your desired folder by p
 
   https://github.com/tajemouti/portfolio.git
 
+Or you can just click [here](https://tajemouti.github.io) to access the online portfolio homepage.
 ### Prerequisites <a name="prerequisites"></a>
 
   Node.js
@@ -107,9 +108,7 @@ npx stylelint "**/*.{css,scss}"
 
 ### Deployment
 
-You can deploy this project using:
-
-git push https://github.com/tajemouti/portfolio.git
+This project is deployed using Github Pages and Git bash..
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,7 +144,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-This was my first Portfolio project ever.. So please.. Show some appreciation.. Thank you in advance.
+This is my first Portfolio project ever.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
