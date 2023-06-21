@@ -150,7 +150,6 @@ header {
 }
 
 .link:hover {
-  background: var(--orange-like);
   transform: scale(1.5);
 }
 
