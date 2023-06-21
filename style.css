@@ -37,6 +37,8 @@ header {
   padding: 12px 6.4%;
   background-color: var(--dark-grey);
   width: 100%;
+  position: fixed;
+  z-index: 44444;
 }
 
 #nav-bar {
@@ -148,7 +150,6 @@ header {
 }
 
 .link:hover {
-  background: var(--orange-like);
   transform: scale(1.5);
 }
 
