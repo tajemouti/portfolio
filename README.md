@@ -49,7 +49,7 @@ Visual Studia Code, Figma and HTML/CSS linters
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://drive.google.com/file/d/1CEg59wZK7R-0b2Kgi4WgXtW2oM2zAlDi/view?usp=sharing)
+- [Live Demo Link](https://www.loom.com/share/48b148afee274f95a0ecc0ffbe4af33d?sid=ebe7b091-c86b-4f36-a53e-a5ddf673358e)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
