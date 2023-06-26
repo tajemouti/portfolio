@@ -26,8 +26,12 @@
   list-style-type: none;
 }
 
-body {
+html {
   min-width: 375px;
+}
+
+body {
+  width: 100%;
 }
 
 header {
@@ -85,7 +89,7 @@ header {
 #hero-section {
   background-color: var(--black);
   padding: 120px 6.4%;
-  min-height: 590px;
+  min-height: 616px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -102,7 +106,7 @@ header {
 .background {
   background-image: url("default/SVG/Illustration.svg");
   background-repeat: no-repeat;
-  background-position: right 228px;
+  background-position: right 238px;
 }
 
 .hello {
@@ -130,7 +134,7 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  height: 123px;
+  max-height: 123px;
   min-width: 327px;
   max-width: 566px;
 }
