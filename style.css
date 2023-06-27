@@ -34,7 +34,6 @@ body {
   width: 100%;
 }
 
-
 #tool-bar {
   display: flex;
   justify-content: space-between;
@@ -58,14 +57,11 @@ body {
 }
 
 #mobile-menu {
-  
   display: flex;
   flex-direction: column;
   position: absolute;
   background: var(--dark-grey);
   min-width: 100%;
-  
-  
 }
 
 .cancel {
@@ -82,7 +78,7 @@ body {
   align-items: center;
   gap: 8px;
   height: 85vh;
-  margin-left: 6,4%;
+  margin-left: 6, 4%;
   margin-right: 6.4%;
 }
 
@@ -98,7 +94,7 @@ body {
 .mobile-nav-link {
   display: flex;
   width: 327px;
-  padding: 8px 0px 0px 0px;
+  padding-top: 8px;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
@@ -116,7 +112,7 @@ body {
   display: flex;
   width: 295px;
   height: 40px;
-  padding: 8px 68px 8px 0px;
+  padding: 8px 68px 8px 0.1px;
   align-items: center;
   color: #fff5e1;
   font-size: 32px;

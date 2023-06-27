@@ -1,20 +1,22 @@
-const toolBar = document.querySelector(".menu-icon");
-const mobileNav = document.querySelector(".mobile-menu");
-const cancelX=document.querySelector(".cancel")
-const navList = document.querySelector("#mobile-nav-bar");
+const toolBar = document.querySelector('.menu-icon');
+const mobileNav = document.querySelector('.mobile-menu');
+const cancelX = document.querySelector('.cancel');
+const navList = document.querySelector('#mobile-nav-bar');
 
 function displayMobileMenu() {
-    mobileNav.style.display=="none" ? mobileNav.style.display="block" : mobileNav.style.display="none";
+  if (mobileNav.style.display === 'none') mobileNav.style.display = 'block';
+  else mobileNav.style.display = 'none';
 }
 
 function hideMobileMenu() {
-    mobileNav.style.display=="block" ? mobileNav.style.display="none" : mobileNav.style.display="black";
+  if (mobileNav.style.display === 'block') mobileNav.style.display = 'none';
+  else mobileNav.style.display = 'block';
 }
 
 function hideMenu() {
-    mobileNav.style.display="none";
+  mobileNav.style.display = 'none';
 }
 
-cancelX.addEventListener("click", hideMobileMenu);
-toolBar.addEventListener("click", displayMobileMenu);
-navList.addEventListener("click", hideMenu);
+cancelX.addEventListener('click', hideMobileMenu);
+toolBar.addEventListener('click', displayMobileMenu);
+navList.addEventListener('click', hideMenu);
