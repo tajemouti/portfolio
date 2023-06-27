@@ -24,10 +24,10 @@
 
 # 📖 [Portfolio] <a name="about-project"></a>
 
-**[Portfolio]** is a learning project in which it is required to implement HTML/CSS linters.. And to build a professional portfolio webpage based on Figma template..
+**[Portfolio]** is a learning project in which it is required to implement HTML/CSS/JavaScript linters.. And to build a professional portfolio webpage based on Figma template..
 
 ## 🛠 Built With <a name="built-with"></a>
-Visual Studia Code, Figma and HTML/CSS linters 
+Visual Studia Code, Figma and HTML/CSS/JavaScript linters 
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -44,12 +44,15 @@ Visual Studia Code, Figma and HTML/CSS linters
 - **[Linters implementation]**
 - **[Portfolio homepage]**
 
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://www.loom.com/share/48b148afee274f95a0ecc0ffbe4af33d?sid=ebe7b091-c86b-4f36-a53e-a5ddf673358e)
+- [Live Demo Link - Mobile version menu](https://drive.google.com/file/d/1spglecmU_T14dXomny0K6WwLGI28VB5I/view?usp=sharing)
+- Or you can just click [here](https://tajemouti.github.io) to access the online portfolio homepage.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -62,12 +65,11 @@ In order to use this project.. Clone this repository to your desired folder by p
 
   https://github.com/tajemouti/portfolio.git
 
-Or you can just click [here](https://tajemouti.github.io) to access the online portfolio homepage.
 ### Prerequisites <a name="prerequisites"></a>
 
   Node.js
   Git
-  HTML/CSS linters
+  HTML/CSS/JavaScript linters
 
 ### Install <a name="install"></a>
 
@@ -79,13 +81,19 @@ NOTE: If you are running on Windows, you need to initialize npm to create packag
   
   npm init -y
 
-  Then copy .hintrc to the root directory of your project
+  Then copy .hintrc to the root directory of your project.
 
--Install Stylehint
+-Install Stylehint:
+
   npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x\`
 
-  Then copy .stylelintrc.json to the root directory of your project
+  Then copy .stylelintrc.json to the root directory of your project.
 
+-Install ESlint:
+
+  npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+
+  Then Copy .eslintrc.json to the root directory of your project.
 
 ### Usage <a name="usage"></a>
 
@@ -96,6 +104,10 @@ npx hint .
 and
 
 npx stylelint "**/*.{css,scss}"
+
+and
+
+npx eslint .
 
 -Fix validation errors.
 
@@ -111,7 +123,6 @@ npx stylelint "**/*.{css,scss}"
 This project is deployed using Github Pages and Git bash..
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 ## 👥 Authors <a name="authors"></a>
@@ -151,7 +162,7 @@ This is my first Portfolio project ever.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my coding partner [Binyam Olango](https://github.com/binyamolango) .. I really appreciate your contribution..
+I would like to thank my coding partner [Edgah](https://github.com/Edgahkipkemoi) .. I really appreciate your contribution..
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

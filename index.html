@@ -9,24 +9,48 @@
   </head>
   <body>
     <header>
-      <a class="logo" href="#">Ajrass</a>
-      <a class="menu-icon" href="#"><img src="default/SVG/IconMenu.svg" alt="Menu Icon"></a>
-      <nav id="nav-bar">
-        <ul class="nav-links">
-          <li class="nav-link">
-            <a href="#work-section">Portfolio</a>
-          </li>
-          <li class="nav-link">
-            <a href="#about-me-section">About</a>
-          </li>
-          <li class="nav-link">
-            <a href="#form-section">Contact</a>
-          </li>
-          <li>
-            <a href="#"><img src="default/SVG/mail.svg" alt="mail"></a>
-          </li>
-        </ul>
-      </nav>
+      <div class="mobile-menu">
+        <div id="mobile-menu">
+          <a class="cancel" href="#">
+            <img src="default/SVG/Enabled.svg" alt="cancel">
+          </a>
+          <ul id="mobile-nav-bar">
+            <li class="mobile-nav-link">
+              <a href="#work-section">Portfolio</a>
+            </li>
+            <hr class="menu-divider">
+            <li class="mobile-nav-link">
+              <a href="#about-me-section">About</a>
+            </li>
+            <hr class="menu-divider">
+            <li class="mobile-nav-link">
+              <a href="#form-section">Contact</a>
+            </li>
+            <hr class="menu-divider">
+          </ul>
+          <div class="menu-footer"><div id="bottom-line"></div></div>
+        </div>
+      </div>
+      <div id="tool-bar">
+        <div><a class="logo" href="#">Ajrass</a></div>
+        <a class="menu-icon" href="#"><img src="default/SVG/IconMenu.svg" alt="Menu Icon"></a>
+        <nav id="nav-bar">
+          <ul class="nav-links">
+            <li class="nav-link">
+              <a href="#work-section">Portfolio</a>
+            </li>
+            <li class="nav-link">
+              <a href="#about-me-section">About</a>
+            </li>
+            <li class="nav-link">
+              <a href="#form-section">Contact</a>
+            </li>
+            <li>
+              <a href="#"><img src="default/SVG/mail.svg" alt="mail"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
       <section id="hero-section" class="background">
@@ -270,5 +294,6 @@
       </ul>
       <div id="bottom-line"></div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
