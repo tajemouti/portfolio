@@ -20,3 +20,12 @@ function hideMenu() {
 cancelX.addEventListener('click', hideMobileMenu);
 toolBar.addEventListener('click', displayMobileMenu);
 navList.addEventListener('click', hideMenu);
+
+const mainCardInfos  = {
+  title: 'Multi-Post Stories',
+  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+  languages: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
+  live: 'https://tajemouti.github.io/',
+  source: 'https://github.com/tajemouti/portfolio',
+  image: './default/PNG/img-placeholder.png'
+};
