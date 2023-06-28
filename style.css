@@ -741,10 +741,6 @@ footer {
 }
 
 @media (min-width: 1280px) {
-  header {
-    padding: 26px 10%;
-  }
-
   #hero-section {
     padding-left: 143px;
     padding-top: 0.1px;
