@@ -883,9 +883,10 @@ footer {
   }
 
   .modal-img {
-      min-width: 100%;
-      height: 100%;
-    }
+    min-width: 100%;
+    height: 100%;
+    max-height: 448px;
+  }
 
   .modal-body {
     justify-content: space-between;
@@ -897,10 +898,6 @@ footer {
   .snapshot {
     float: left;
     width: 60%;
-  }
-
-  .modal-img {
-    max-height: 448px;
   }
 }
 
