@@ -638,6 +638,147 @@ footer {
   border-radius: 10px;
 }
 
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.5s ease-in-out;
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  border: 1px solid #dfe1e6;
+  background: #fff;
+  z-index: 10;
+  min-width: 90vw;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 100%;
+}
+
+.modal-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  min-width: 100%;
+}
+
+.modal-title {
+  display: flex;
+  flex-direction: column;
+  max-height: 82px;
+  color: #172b4b;
+  font-size: 32px;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 8px;
+}
+
+.languages {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.languages-item {
+  display: flex;
+  padding: 10px 12px;
+  align-items: center;
+  border: 1px solid #979493;
+  font-size: 13px;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  line-height: 16px;
+  color: var(--dark-grey);
+}
+
+.snapshot {
+  width: 311px;
+  min-height: 220px;
+  background: url("default/SVG/Snapshoot\ Portfolio.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 311px;
+}
+
+.modal-text {
+  display: flex;
+  flex-direction: column;
+  color: #344563;
+  font-size: 16px;
+  font-family: Inter, sans-serif;
+  line-height: 24px;
+}
+
+.action {
+  display: flex;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.action-button {
+  display: flex;
+  padding: 12px;
+  align-items: flex-start;
+  gap: 12px;
+  background: var(--orange);
+  color: var(--white);
+  text-align: center;
+  font-size: 17px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.51px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 7;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 @media (min-width: 768px) {
   #nav-bar {
     display: block;
@@ -732,6 +873,25 @@ footer {
 
   label {
     width: 100%;
+  }
+
+  .right-block {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+  }
+
+  .modal-body {
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    width: 424px;
+  }
+
+  .snapshot {
+    float: left;
+    width: 65%;
+    height: 448px;
   }
 }
 
