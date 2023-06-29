@@ -653,10 +653,11 @@ footer {
   background: #fff;
   z-index: 10;
   min-width: 90vw;
+  min-height: 90vh;
 }
 
 .modal.active {
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(0.96, 0.9);
 }
 
 .modal-header {
@@ -712,12 +713,9 @@ footer {
   color: var(--dark-grey);
 }
 
-.snapshot {
-  width: 311px;
-  min-height: 220px;
-  background: url("default/SVG/Snapshoot\ Portfolio.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.modal-img {
+  width: 327px;
+  height: 237px;
 }
 
 .modal-body {
@@ -725,7 +723,6 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  width: 311px;
 }
 
 .modal-text {
@@ -875,23 +872,35 @@ footer {
     width: 100%;
   }
 
+  .modal {
+    justify-content: space-between;
+  }
+
   .right-block {
-    width: 100%;
+    min-width: 100%;
     display: flex;
     gap: 24px;
   }
+
+  .modal-img {
+      min-width: 100%;
+      height: 100%;
+    }
 
   .modal-body {
     justify-content: space-between;
     align-items: flex-start;
     gap: 12px;
-    width: 424px;
+    width: 40%;
   }
 
   .snapshot {
     float: left;
-    width: 65%;
-    height: 448px;
+    width: 60%;
+  }
+
+  .modal-img {
+    max-height: 448px;
   }
 }
 
