@@ -235,7 +235,7 @@ modals += `
 <div class="modal" id="modal2">
   <div class="modal-header">
     <div class="modal-heading">
-      <div class="modal-title">${titleArr[2]}</div>
+      <div class="modal-title">${titleArr[1]}</div>
         <div data-close-button class="close-button">
           <img src=${imageArr[5]} alt="Cancel">
         </div>
@@ -268,7 +268,7 @@ modals += `
 <div class="modal" id="modal3">
   <div class="modal-header">
     <div class="modal-heading">
-      <div class="modal-title">${titleArr[3]}</div>
+      <div class="modal-title">${titleArr[2]}</div>
         <div data-close-button class="close-button">
           <img src=${imageArr[5]} alt="Cancel">
         </div>
@@ -301,7 +301,7 @@ modals += `
 <div class="modal" id="modal4">
   <div class="modal-header">
     <div class="modal-heading">
-      <div class="modal-title">${titleArr[0]}</div>
+      <div class="modal-title">${titleArr[3]}</div>
         <div data-close-button class="close-button">
           <img src=${imageArr[5]} alt="Cancel">
         </div>
