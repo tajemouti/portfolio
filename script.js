@@ -370,3 +370,6 @@ overlay.addEventListener('click', () => {
     closeModal(modal);
   });
 });
+
+const form = document.getElementById('contact-form');
+const email = document.getElementById('email')
