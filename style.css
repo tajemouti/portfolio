@@ -778,6 +778,9 @@ footer {
 
 .errText {
   color: black;
+  text-align: justify;
+  border: 2px solid var(--orange);
+  border-radius: 5px;
 }
 
 @media (min-width: 768px) {

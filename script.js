@@ -371,10 +371,8 @@ overlay.addEventListener('click', () => {
   });
 });
 
-let form = document.getElementById('form');
-let errorMsg = form.querySelector('.errText');
-
-form.addEventListener('submit', submitControl);
+const form = document.getElementById('form');
+const errorMsg = form.querySelector('.errText');
 
 function submitControl(event) {
   event.preventDefault();
@@ -389,3 +387,5 @@ function submitControl(event) {
     form.append(errorMsg);
   }
 }
+
+form.addEventListener('submit', submitControl);
