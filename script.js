@@ -371,5 +371,21 @@ overlay.addEventListener('click', () => {
   });
 });
 
-const form = document.getElementById('contact-form');
-const email = document.getElementById('email')
+let form = document.getElementById('form');
+let errorMsg = form.querySelector('.errText');
+
+form.addEventListener('submit', submitControl);
+
+function submitControl(event) {
+  event.preventDefault();
+
+  const email = document.getElementById('email');
+  const emailVal = email.value;
+
+  if (emailVal === emailVal.toLowerCase()) {
+    form.submit();
+  } else {
+    errorMsg.textContent = 'This message has not been sent! The e-mail must be in lower case letters.';
+    form.append(errorMsg);
+  }
+}

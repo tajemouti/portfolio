@@ -776,6 +776,10 @@ footer {
   pointer-events: all;
 }
 
+.errText {
+  color: black;
+}
+
 @media (min-width: 768px) {
   #nav-bar {
     display: block;
