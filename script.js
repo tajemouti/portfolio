@@ -390,13 +390,13 @@ function submitControl(event) {
 
 form.addEventListener('submit', submitControl);
 
-const fullNameInfo = document.getElementById('fullname');
-const emailInfo = document.getElementById('mail');
+const fullNameInfo = document.getElementById('name');
+const emailInfo = document.getElementById('email');
 const messageInfo = document.getElementById('message');
 
 function savedFormData() {
   const formData = {
-    fullname: fullNameInfo.value,
+    name: fullNameInfo.value,
     email: emailInfo.value,
     message: messageInfo.value,
   };
@@ -411,7 +411,7 @@ window.addEventListener('load', () => {
   const savedData = localStorage.getItem('formData');
   if (savedData) {
     const formData = JSON.parse(savedData);
-    fullNameInfo.value = formData.fullname;
+    fullNameInfo.value = formData.name;
     emailInfo.value = formData.email;
     messageInfo.value = formData.message;
   }
