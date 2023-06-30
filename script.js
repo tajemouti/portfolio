@@ -389,3 +389,30 @@ function submitControl(event) {
 }
 
 form.addEventListener('submit', submitControl);
+
+const fullNameInfo = document.getElementById('fullname');
+const emailInfo = document.getElementById('mail');
+const messageInfo = document.getElementById('message');
+
+function savedFormData() {
+  const formData = {
+    fullname: fullNameInfo.value,
+    email: emailInfo.value,
+    message: messageInfo.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+
+fullNameInfo.addEventListener('input', savedFormData);
+emailInfo.addEventListener('input', savedFormData);
+messageInfo.addEventListener('input', savedFormData);
+
+window.addEventListener('load', () => {
+  const savedData = localStorage.getItem('formData');
+  if (savedData) {
+    const formData = JSON.parse(savedData);
+    fullNameInfo.value = formData.fullname;
+    emailInfo.value = formData.email;
+    messageInfo.value = formData.message;
+  }
+});
