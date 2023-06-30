@@ -140,7 +140,7 @@
       </section>
       <section id="form-section">
         <h2 class="form-heading">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-        <form action="https://formspree.io/f/mdovqere" method="post">
+        <form id="form" action="https://formspree.io/f/mdovqere" method="post">
           <label for="name">
             <input id="name" name="name" type="text" maxlength="30" placeholder="Full name"required>
           </label>
@@ -151,6 +151,7 @@
             <textarea name="message" maxlength="500" placeholder="Write me something..." required></textarea>
           </label>
           <button class="btn" type="submit">Get in touch</button>
+          <p class="errText"></p>
         </form>
       </section>
     </main>
