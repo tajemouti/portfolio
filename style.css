@@ -631,7 +631,7 @@ footer {
   align-items: center;
 }
 
-#bottom-line {
+.bottom-line {
   width: 134px;
   height: 5px;
   background: #0d151e;
@@ -852,7 +852,7 @@ footer {
     align-items: self-start;
   }
 
-  #bottom-line {
+  .bottom-line {
     display: none;
   }
 
