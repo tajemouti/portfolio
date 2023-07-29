@@ -320,6 +320,7 @@ body {
   color: var(--blue-like);
   margin-bottom: 12px;
   display: flex;
+  text-align: justify;
 }
 
 .lang1 {
@@ -386,6 +387,7 @@ button:disabled {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
   padding: 8px 16px;
   gap: 12px;
   position: absolute;
@@ -396,13 +398,12 @@ button:disabled {
 }
 
 .right-block2-heading {
-  width: 295px;
-  height: 81px;
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
+  background-color: rgb(204, 212, 226, 0.5);
 }
 
 .right-block2-description {
@@ -427,12 +428,13 @@ button:disabled {
   display: flex;
   align-items: center;
   padding: 10px 12px;
-  background: var(--grey-like);
+  background: rgba(216, 199, 199, 0.7);
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 15px;
   line-height: 20px;
+  color: black;
 }
 
 .large-button {
@@ -733,6 +735,7 @@ footer {
   font-size: 16px;
   font-family: Inter, sans-serif;
   line-height: 24px;
+  text-align: justify;
 }
 
 .action {
@@ -895,6 +898,10 @@ footer {
     height: 100%;
     max-height: 500px;
     object-fit: cover;
+  }
+
+  .modal-text {
+    font-size: 20px;
   }
 
   .modal-body {
