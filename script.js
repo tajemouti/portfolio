@@ -238,7 +238,7 @@ modals += `
         <img class="modal-img" src=${imageArr[1]} alt="Snapshot">
       </div>
       <div class="modal-body">
-        <p class="modal-text">${descriptionArr[4]}</p>
+        <p class="modal-text">${descriptionArr[5]}</p>
         <div class="action">
           <a class="action-button" href=${liveArr[0]} target="_blank">${buttonArr[1]}
             <img src=${imageArr[6]} alt="live-icon">
