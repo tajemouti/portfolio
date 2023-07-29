@@ -27,34 +27,51 @@ const modal = document.getElementById('modals-container');
 const cardInfos = {
   title: [
     'Multi-Post Stories',
-    'Data Dashboard Healthcare',
-    'Website Portfolio',
-    'Profesional Art Printing Data More',
-    'My Recent Works',
+    'Dubai AirShow',
+    'Bookstore App',
+    'To-Do List App',
+    'Portfolio WebSite',
+    'Coming Soon',
   ],
   image: [
     './default/SVG/ImgPlaceholder0.svg',
-    './default/SVG/ImgPlaceholder1.svg',
-    './default/SVG/ImgPlaceholder2.svg',
-    './default/SVG/ImgPlaceholder3.svg',
-    './default/SVG/ImgPlaceholder4.svg',
+    './default/JPG/PortfolioCode.jpg',
+    './default/JPG/DubaiAirShow01.jpg',
+    './default/JPG/BookStoreApp.jpg',
+    './default/JPG/TodoListApp.jpg',
     './default/SVG/Cancel.svg',
     './default/SVG/liveIcon.svg',
     './default/SVG/githubIcon.svg',
+    './default/JPG/ComingSoon01.jpg',
+    './default/JPG/ComingSoon02.jpg',
   ],
   description: [
+    'Lorem ipsum dolor sit amet consectetur, incidunt enim corporis nihil praesentium ratione numquam suscipit rerum iure dolorum nostrum vel! Excepturi laboriosam facilis est sint culpa blanditiis saepe, magnam a atque labore ullam omnis quaerat, minus accusamus maxime aspernatur quia minima similique molestias aliquid itaque dolor incidunt! Earum perspiciatis voluptatem labore, alias architecto a sint odit, ab ad velit, repellendus reprehenderit facilis?',
     "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    "Taking place on 13-17 November 2023 in DWC, Dubai Airshow 2023 grants you exclusive access to cutting-edge technology, groundbreaking innovations, game-changing insights, unparalleled networking opportunities with global influential leaders, and the chance to witness breathtaking aircrafts displays in the sky. This year's exciting edition will also return with new and returning features, including VISTA - the startup hub along with 300+ all-star speakers, 13 industry tracks across 5 stages and an expanded number of networking opportunities.",
+    'Welcome to my simple Bookstore JavaScript application! With just a few lines of code, you can effortlessly add and remove book titles and their respective authors. Organize your reading list with ease and enjoy a smooth user experience. Happy reading!',
+    'Welcome to our Simple To-Do List JavaScript Application! With this user-friendly tool, you can effortlessly add, edit, and remove daily tasks to keep your schedule organized and on track. Stay productive by marking tasks as completed, allowing you to remove them all at once. Take control of your daily responsibilities and boost your efficiency with our intuitive to-do list app. Get started today and experience the convenience of streamlined task management.',
+    "Welcome to my portfolio website! You'll discover who I am and what drives my passion for design. The work section showcases my latest projects, reflecting my creativity and expertise. In the skills section, explore my diverse skillset and dedication to continuous improvement. Don't hesitate to reach out through the contact section; let's connect and create something amazing together!",
   ],
-  technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby', 'Ruby on Rails'],
+  technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby', 'Ruby on Rails', 'JavaScript', 'Webpack'],
   button: [
     'See project',
     'See live',
     'See source',
   ],
-  live: 'https://tajemouti.github.io/',
-  source: 'https://github.com/tajemouti/portfolio',
+  live: [
+    'https://tajemouti.github.io/',
+    'https://tajemouti.github.io/first-capstone/',
+    'https://tajemouti.github.io/awesome-books-es6/',
+    'https://tajemouti.github.io/toDoList/dist/',
+    'https://tajemouti.github.io/portfolio/',
+  ],
+  source: [
+    'https://github.com/tajemouti/portfolio/',
+    'https://github.com/tajemouti/first-capstone/',
+    'https://github.com/tajemouti/awesome-books-es6/',
+    'https://github.com/tajemouti/toDoList/',
+  ],
 };
 
 const titleArr = cardInfos.title;
@@ -62,6 +79,8 @@ const imageArr = cardInfos.image;
 const descriptionArr = cardInfos.description;
 const technologiesArr = cardInfos.technologies;
 const buttonArr = cardInfos.button;
+const liveArr = cardInfos.live;
+const sourceArr = cardInfos.source;
 
 let mainCard = '';
 mainCard += `
@@ -87,18 +106,27 @@ mainCard += `
 <div id="cards-grid">
 <aside class="card">
   <img class="card-img" src=${imageArr[1]} alt="placeholder">
+  <div class="right-block2">
+    <h3 class="right-block2-heading">${titleArr[4]}</h3>
+    <p class="right-block2-description"></p>
+    <ul class="lang2">
+      <li class="lang-list2">${technologiesArr[1]}</li>
+      <li class="lang-list2">${technologiesArr[0]}</li>
+      <li class="lang-list2">${technologiesArr[5]}</li>
+    </ul>
+  </div>
   <button data-modal-target="#modal1" class="large-button" type="button">${buttonArr[0]}</button>
 </aside>
       
 <aside class="card">
   <img  class="card-img" src=${imageArr[2]} alt="placeholder">
   <div class="right-block2">
-    <h3 class="right-block2-heading">${titleArr[1]}</h3>
-    <p class="right-block2-description">${descriptionArr[1]}</p>
+    <h3 class="right-block2-heading"></h3>
+    <p class="right-block2-description"></p>
     <ul class="lang2">
       <li class="lang-list2">${technologiesArr[1]}</li>
       <li class="lang-list2">${technologiesArr[2]}</li>
-      <li class="lang-list2">${technologiesArr[3]}</li>
+      <li class="lang-list2">${technologiesArr[5]}</li>
     </ul>
   </div>
   <button data-modal-target="#modal2" class="large-button" type="button">${buttonArr[0]}</button>
@@ -108,11 +136,11 @@ mainCard += `
   <img  class="card-img" src=${imageArr[3]} alt="placeholder">
   <div class="right-block2">
     <h3 class="right-block2-heading">${titleArr[2]}</h3>
-    <p class="right-block2-description">${descriptionArr[1]}</p>
+    <p class="right-block2-description"></p>
     <ul class="lang2">
       <li class="lang-list2">${technologiesArr[1]}</li>
-      <li class="lang-list2">${technologiesArr[2]}</li>
-      <li class="lang-list2">${technologiesArr[3]}</li>
+      <li class="lang-list2">${technologiesArr[0]}</li>
+      <li class="lang-list2">${technologiesArr[5]}</li>
     </ul>
   </div>
   <button data-modal-target="#modal3" class="large-button" type="button">${buttonArr[0]}</button>
@@ -122,42 +150,32 @@ mainCard += `
   <img  class="card-img" src=${imageArr[4]} alt="placeholder">
   <div class="right-block2">
     <h3 class="right-block2-heading">${titleArr[3]}</h3>
-    <p class="right-block2-description">${descriptionArr[1]}</p>
+    <p class="right-block2-description"></p>
     <ul class="lang2">
       <li class="lang-list2">${technologiesArr[1]}</li>
-      <li class="lang-list2">${technologiesArr[2]}</li>
-      <li class="lang-list2">${technologiesArr[3]}</li>
+      <li class="lang-list2">${technologiesArr[5]}</li>
+      <li class="lang-list2">${technologiesArr[6]}</li>
     </ul>
   </div>
   <button data-modal-target="#modal4" class="large-button" type="button">${buttonArr[0]}</button>
 </aside>
 
 <aside class="card">
-  <img  class="card-img" src=${imageArr[2]} alt="placeholder">
+  <img  class="card-img" src=${imageArr[8]} alt="placeholder">
   <div class="right-block2">
-    <h3 class="right-block2-heading">${titleArr[1]}</h3>
-    <p class="right-block2-description">${descriptionArr[1]}</p>
-    <ul class="lang2">
-      <li class="lang-list2">${technologiesArr[1]}</li>
-      <li class="lang-list2">${technologiesArr[2]}</li>
-      <li class="lang-list2">${technologiesArr[3]}</li>
-    </ul>
+    <h3 class="right-block2-heading"></h3>
+    <p class="right-block2-description"></p>
   </div>
-  <button data-modal-target="#modal2" class="large-button" type="button">${buttonArr[0]}</button>
+  <button data-modal-target="#modal5" class="large-button" type="button">${buttonArr[0]}</button>
 </aside>
       
 <aside class="card">
-  <img  class="card-img" src=${imageArr[3]} alt="placeholder">
+  <img  class="card-img" src=${imageArr[9]} alt="placeholder">
   <div class="right-block2">
-    <h3 class="right-block2-heading">${titleArr[2]}</h3>
-    <p class="right-block2-description">${descriptionArr[1]}</p>
-    <ul class="lang2">
-      <li class="lang-list2">${technologiesArr[1]}</li>
-      <li class="lang-list2">${technologiesArr[2]}</li>
-      <li class="lang-list2">${technologiesArr[3]}</li>
-    </ul>
+    <h3 class="right-block2-heading"></h3>
+    <p class="right-block2-description"></p>
   </div>
-  <button data-modal-target="#modal3" class="large-button" type="button">${buttonArr[0]}</button>
+  <button data-modal-target="#modal6" class="large-button" type="button">${buttonArr[0]}</button>
 </aside>
 </div>
 `;
@@ -175,9 +193,11 @@ modals += `
         </div>
       </div>
       <ul class="languages">
-        <li class="lang-list1">${technologiesArr[1]}</li>
-        <li class="lang-list1">${technologiesArr[2]}</li>
-        <li class="lang-list1">${technologiesArr[4]}</li>
+      <li class="lang-list1">${technologiesArr[0]}</li>
+      <li class="lang-list1">${technologiesArr[1]}</li>
+      <li class="lang-list1">${technologiesArr[2]}</li>
+      <li class="lang-list1">${technologiesArr[3]}</li>
+      <li class="lang-list1">${technologiesArr[5]}</li>
       </ul>
     </div>
     <div class="right-block">
@@ -185,7 +205,7 @@ modals += `
         <img class="modal-img" src=${imageArr[0]} alt="Snapshot">
       </div>
       <div class="modal-body">
-        <p class="modal-text">${descriptionArr[2]}</p>
+        <p class="modal-text">${descriptionArr[0]}</p>
         <div class="action">
           <a class="action-button" href=${cardInfos.live} target="_blank">${buttonArr[1]}
             <img src=${imageArr[6]} alt="live-icon">
@@ -202,15 +222,15 @@ modals += `
 <div class="modal" id="modal1">
   <div class="modal-header">
     <div class="modal-heading">
-      <div class="modal-title">${titleArr[0]}</div>
+      <div class="modal-title">${titleArr[4]}</div>
         <div data-close-button class="close-button">
           <img src=${imageArr[5]} alt="Cancel">
         </div>
       </div>
       <ul class="languages">
         <li class="lang-list1">${technologiesArr[1]}</li>
-        <li class="lang-list1">${technologiesArr[2]}</li>
-        <li class="lang-list1">${technologiesArr[4]}</li>
+        <li class="lang-list1">${technologiesArr[0]}</li>
+        <li class="lang-list1">${technologiesArr[5]}</li>
       </ul>
     </div>
     <div class="right-block">
@@ -218,12 +238,12 @@ modals += `
         <img class="modal-img" src=${imageArr[1]} alt="Snapshot">
       </div>
       <div class="modal-body">
-        <p class="modal-text">${descriptionArr[2]}</p>
+        <p class="modal-text">${descriptionArr[4]}</p>
         <div class="action">
-          <a class="action-button" href=${cardInfos.live} target="_blank">${buttonArr[1]}
+          <a class="action-button" href=${liveArr[0]} target="_blank">${buttonArr[1]}
             <img src=${imageArr[6]} alt="live-icon">
           </a>
-          <a class="action-button" href=${cardInfos.source} target="_blank">${buttonArr[2]}
+          <a class="action-button" href=${sourceArr[0]} target="_blank">${buttonArr[2]}
             <img src=${imageArr[7]} alt="github-icon">
           </a>
         </div>
@@ -243,7 +263,7 @@ modals += `
       <ul class="languages">
         <li class="lang-list1">${technologiesArr[1]}</li>
         <li class="lang-list1">${technologiesArr[2]}</li>
-        <li class="lang-list1">${technologiesArr[4]}</li>
+        <li class="lang-list1">${technologiesArr[5]}</li>
       </ul>
     </div>
     <div class="right-block">
@@ -253,10 +273,10 @@ modals += `
       <div class="modal-body">
         <p class="modal-text">${descriptionArr[2]}</p>
         <div class="action">
-          <a class="action-button" href=${cardInfos.live} target="_blank">${buttonArr[1]}
+          <a class="action-button" href=${liveArr[1]} target="_blank">${buttonArr[1]}
             <img src=${imageArr[6]} alt="live-icon">
           </a>
-          <a class="action-button" href=${cardInfos.source} target="_blank">${buttonArr[2]}
+          <a class="action-button" href=${sourceArr[1]} target="_blank">${buttonArr[2]}
             <img src=${imageArr[7]} alt="github-icon">
           </a>
         </div>
@@ -275,8 +295,8 @@ modals += `
       </div>
       <ul class="languages">
         <li class="lang-list1">${technologiesArr[1]}</li>
-        <li class="lang-list1">${technologiesArr[2]}</li>
-        <li class="lang-list1">${technologiesArr[4]}</li>
+        <li class="lang-list1">${technologiesArr[0]}</li>
+        <li class="lang-list1">${technologiesArr[5]}</li>
       </ul>
     </div>
     <div class="right-block">
@@ -284,12 +304,12 @@ modals += `
         <img class="modal-img" src=${imageArr[3]} alt="Snapshot">
       </div>
       <div class="modal-body">
-        <p class="modal-text">${descriptionArr[2]}</p>
+        <p class="modal-text">${descriptionArr[3]}</p>
         <div class="action">
-          <a class="action-button" href=${cardInfos.live} target="_blank">${buttonArr[1]}
+          <a class="action-button" href=${liveArr[2]} target="_blank">${buttonArr[1]}
             <img src=${imageArr[6]} alt="live-icon">
           </a>
-          <a class="action-button" href=${cardInfos.source} target="_blank">${buttonArr[2]}
+          <a class="action-button" href=${sourceArr[2]} target="_blank">${buttonArr[2]}
             <img src=${imageArr[7]} alt="github-icon">
           </a>
         </div>
@@ -308,8 +328,8 @@ modals += `
       </div>
       <ul class="languages">
         <li class="lang-list1">${technologiesArr[1]}</li>
-        <li class="lang-list1">${technologiesArr[2]}</li>
-        <li class="lang-list1">${technologiesArr[4]}</li>
+        <li class="lang-list1">${technologiesArr[5]}</li>
+        <li class="lang-list1">${technologiesArr[6]}</li>
       </ul>
     </div>
     <div class="right-block">
@@ -317,12 +337,68 @@ modals += `
         <img class="modal-img" src=${imageArr[4]} alt="Snapshot">
       </div>
       <div class="modal-body">
-        <p class="modal-text">${descriptionArr[2]}</p>
+        <p class="modal-text">${descriptionArr[4]}</p>
         <div class="action">
-          <a class="action-button" href=${cardInfos.live} target="_blank">${buttonArr[1]}
+          <a class="action-button" href=${liveArr[3]} target="_blank">${buttonArr[1]}
             <img src=${imageArr[6]} alt="live-icon">
           </a>
-          <a class="action-button" href=${cardInfos.source} target="_blank">${buttonArr[2]}
+          <a class="action-button" href=${sourceArr[3]} target="_blank">${buttonArr[2]}
+            <img src=${imageArr[7]} alt="github-icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal5">
+  <div class="modal-header">
+    <div class="modal-heading">
+      <div class="modal-title">${titleArr[5]}</div>
+        <div data-close-button class="close-button">
+          <img src=${imageArr[5]} alt="Cancel">
+        </div>
+      </div>
+    </div>
+    <div class="right-block">
+      <div class="snapshot">
+        <img class="modal-img" src=${imageArr[8]} alt="Snapshot">
+      </div>
+      <div class="modal-body">
+        <p class="modal-text">${descriptionArr[0]}</p>
+        <div class="action">
+          <a class="action-button" href=${liveArr[0]} target="_blank">${buttonArr[1]}
+            <img src=${imageArr[6]} alt="live-icon">
+          </a>
+          <a class="action-button" href=${sourceArr[0]} target="_blank">${buttonArr[2]}
+            <img src=${imageArr[7]} alt="github-icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal6">
+  <div class="modal-header">
+    <div class="modal-heading">
+      <div class="modal-title">${titleArr[5]}</div>
+        <div data-close-button class="close-button">
+          <img src=${imageArr[5]} alt="Cancel">
+        </div>
+      </div>
+    </div>
+    <div class="right-block">
+      <div class="snapshot">
+        <img class="modal-img" src=${imageArr[9]} alt="Snapshot">
+      </div>
+      <div class="modal-body">
+        <p class="modal-text">${descriptionArr[0]}</p>
+        <div class="action">
+          <a class="action-button" href=${liveArr[0]} target="_blank">${buttonArr[1]}
+            <img src=${imageArr[6]} alt="live-icon">
+          </a>
+          <a class="action-button" href=${sourceArr[0]} target="_blank">${buttonArr[2]}
             <img src=${imageArr[7]} alt="github-icon">
           </a>
         </div>
